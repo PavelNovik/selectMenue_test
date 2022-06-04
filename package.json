@@ -1,0 +1,14 @@
+{
+  "name": "the_select_list",
+  "version": "1.0.0",
+  "description": "Exercise with select menue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html --open --port 1116",
+    "build": "parcel build index.html --out-dir=build"
+  },
+  "keywords": [],
+  "author": "PavelNovik <brn2befree@gmail.com>",
+  "license": "ISC"
+}
