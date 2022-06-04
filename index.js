@@ -8,7 +8,7 @@ arr.push(...gaz);
 const selectMenu = document.querySelector('select');
 const textStr = document.querySelector('h1');
 // console.log(selectMenu);
-const options = document.querySelectorAll('option');
+// const options = document.querySelectorAll('option');
 let testTheme;
 const quest = [];
 // console.log(options);
