@@ -1,19 +1,18 @@
 'use strict';
 import { gaz } from './gaz';
 import { koteln } from './koteln';
+import { pipes } from './pipes';
+import { vessels } from './vessel';
 console.log(gaz, koteln);
 const arr = [];
 arr.push(...gaz);
 // console.log(arr);
 const selectMenu = document.querySelector('select');
 const textStr = document.querySelector('h1');
-// console.log(selectMenu);
-// const options = document.querySelectorAll('option');
+
 let testTheme;
 const quest = [];
-// console.log(options);
-// console.log(selectMenu.value);
-// console.log(selectMenu.selectedIndex);
+
 selectMenu.addEventListener('change', function () {
   quest.splice(0);
   testTheme = selectMenu.value;
@@ -25,12 +24,13 @@ selectMenu.addEventListener('change', function () {
   } else if (testTheme === 'gaz') {
     quest.push(...gaz);
     // console.log('gaz');
+  } else if (testTheme === 'pipes') {
+    quest.push(...pipes);
+    // console.log('gaz');
+  } else if (testTheme === 'vessels') {
+    quest.push(...vessels);
+    // console.log('gaz');
   }
   textStr.textContent = `The theme of the test is ${testTheme}`;
   console.log(quest);
 });
-// console.log(quest);
-// selectMenu.onchange = function () {
-//   console.log(selectMenu.value);
-//   console.log(selectMenu.selectedIndex);
-// };
